@@ -1,0 +1,178 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"REDIS_SERVER_",
+				"REDIS_SERVER_SOURCES"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/lib/gems/1.9.1/gems/github_api-0.10.2/lib/github_api/arguments.rb",
+		"/home/a/UltimateMakefile/depends.yml",
+		"/home/a/UltimateMakefile/ThirdPartyIdentification.rake",
+		"/home/a/UltimateMakefile/BuildIdentification.rake",
+		"/home/a/The-Powder-Toy/apt-depends",
+		"/home/a/HelloWorldForCI/main.cpp",
+		"/home/a/HelloWorldForCI/Makefile",
+		"/home/a/The-Powder-Toy/SConstruct",
+		"/home/a/The-Powder-Toy/SConscript",
+		"/home/a/The-Powder-Toy/src/simulation/Gravity.cpp",
+		"/home/a/HelloWorldForCI/main.test.cpp",
+		"/home/a/The-Powder-Toy/Sconscript",
+		"/home/a/HelloWorldForCI/gtest-src/gtest/cmake/internal_utils.cmake"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"puts session.exec!",
+			"test",
+			"cxx_library",
+			"gtest-all",
+			"gtest_all",
+			"gtest_SOURCE_DIR",
+			"\n",
+			"gtest_SOURCE_DIR"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"shell"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "codedup.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

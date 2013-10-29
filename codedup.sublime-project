@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/a/codedup"
+		}
+	],
+
+	"build_systems":
+	[
+		{
+			"name": "unittest-discover",
+			"shell_cmd": "PYTHONPATH=${project_path} python -m unittest discover ${project_path}"
+		}
+	]
+}
