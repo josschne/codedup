@@ -25,3 +25,4 @@ class testBasicMatching(unittest.TestCase):
 	def testFindDuplicateInTestFiles(self):
 		result = self.my_dupe.dupe(open('testFileA.txt').read(), open('testFileB.txt').read())
 		self.assertEqual(result, True)
+		
