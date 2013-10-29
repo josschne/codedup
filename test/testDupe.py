@@ -1,9 +1,15 @@
 import unittest
 from dupe import dupe
 
-class testFunctions(unittest.TestCase):
+class testBasicMatching(unittest.TestCase):
 
-	def testStart(self):
-		my_dupe = dupe.dupe()
-		result = my_dupe.dupe('Hello', 'World')
-		self.assertTrue(result == False)
+	def setUp(self):
+		self.my_dupe = dupe.dupe()
+
+	def testTwoDifferentLinesAreNotDuplicates(self):
+		result = self.my_dupe.dupe('Hello', 'World')
+		self.assertEqual(result, False)
+
+	def testTwoEqualLinesAreDuplicates(self):
+		result = self.my_dupe.dupe('Hello', 'Hello')
+		self.assertEqual(result, True)

@@ -11,7 +11,7 @@
 	[
 		{
 			"name": "unittest-discover",
-			"shell_cmd": "PYTHONPATH=${project_path} python -m unittest discover ${project_path}"
+			"shell_cmd": "python -m unittest discover ${project_path}"
 		}
 	]
 }
