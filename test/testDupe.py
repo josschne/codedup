@@ -21,3 +21,7 @@ class testBasicMatching(unittest.TestCase):
 	def testFindDuplicateInMultilineSourceAndTarget(self):
 		result = self.my_dupe.dupe('Brave\nNew\nWorld\nPeace\n', 'World\nPeace\n')
 		self.assertEqual(result, True)
+
+	def testFindDuplicateInTestFiles(self):
+		result = self.my_dupe.dupe(open('testFileA.txt').read(), open('testFileB.txt').read())
+		self.assertEqual(result, True)
