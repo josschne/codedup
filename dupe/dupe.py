@@ -12,9 +12,12 @@ class dupe:
 			md5_two_grams.append(line_hash.digest())
 		return md5_two_grams
 
-	def dupe(self, first, second):
-		first_md5s = self.getMD5TwoGrams(first)
-		second_md5s = self.getMD5TwoGrams(second)
-
-		matches = list(set(first_md5s) & set(second_md5s))
-		return bool(matches)
+	def dupe(self, *strings):
+		md5s = []
+		for data in strings:
+			md5s.append(self.getMD5TwoGrams(data))
+			
+		matches = set(md5s[0])
+		for twograms in md5s[1:]:
+			matches = matches & set(twograms)
+		return bool(list(matches))
