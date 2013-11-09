@@ -13,11 +13,13 @@ class dupe:
 		return md5_two_grams
 
 	def dupe(self, *strings):
-		md5s = []
-		for data in strings:
-			md5s.append(self.getMD5TwoGrams(data))
-			
-		matches = set(md5s[0])
-		for twograms in md5s[1:]:
-			matches = matches & set(twograms)
-		return bool(list(matches))
+		md5s = {}
+		for index, data in enumerate(strings):
+			for line, twogram in enumerate(self.getMD5TwoGrams(data)):
+				md5s.setdefault(twogram, []).append((index, {"startline":line}))
+
+		matches = []
+		for key in md5s:
+			if len(md5s[key]) > 1:
+				matches.append(md5s[key])
+		return bool(list(matches)), matches
