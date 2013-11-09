@@ -4,7 +4,7 @@ class dupe:
 
 	def getMD5TwoGrams(self, inputString):
 		md5_two_grams = []
-		lines = inputString.split()
+		lines = inputString.splitlines(True)
 		for i in xrange(0, len(lines)-1):
 			line_hash = md5()
 			line_hash.update(lines[i])

@@ -18,6 +18,10 @@ class testBasicMatching(unittest.TestCase):
 		result, _ = self.my_dupe.dupe('Brave\nNew\nWorld\n', 'New\nWorld\n')
 		self.assertEqual(result, True)
 
+	def testTextSeparatedBySpacesDoesNotCountAsDuplication(self):
+		result, _ = self.my_dupe.dupe('Brave New\nWorld\n', 'Brave\nNew\n')
+		self.assertEqual(result, False)
+
 	def testFindDuplicateInMultilineSourceAndTarget(self):
 		result, _ = self.my_dupe.dupe('Brave\nNew\nWorld\nPeace\n', 'World\nPeace\n')
 		self.assertEqual(result, True)
@@ -33,3 +37,4 @@ class testBasicMatching(unittest.TestCase):
 	def testDuplicateLineNumbersAreReported(self):
 		result, matches = self.my_dupe.dupe('Hello\nWorld\n', '1\n2\nHello\nWorld\n5\n6\n')
 		self.assertEqual(matches, [ [(0,{"startline":0}), (1,{"startline":2})] ])
+
